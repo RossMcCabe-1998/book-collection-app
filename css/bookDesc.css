@@ -1,0 +1,124 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url(../images/Marvel-Comics-Wallpaper.jpg);
+}
+
+.mainContent {
+    border: 5px solid #333;
+    min-height: 80vh;
+    border-radius: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    padding: 1em;
+    background-color: whitesmoke;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 10px 15px 10px #333;
+}
+
+.logo {
+    border: 2px solid orange;
+    border-radius: 50px;
+    width: 50px;
+}
+
+
+#bookDescContainer{
+    display:flex;
+    flex-direction: column;
+}
+
+.bookItem {
+    background-color: white;
+    border: 3px solid rgb(54, 58, 63);
+    border-radius: 20px;
+    margin: 2em;
+    padding: 2em;
+    box-shadow: 5px 10px 5px #333;
+}
+
+h2 {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: steelblue;
+    width: 100%;
+    color: white;
+}
+
+.bookItem img {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid rgb(54, 58, 63);
+    border-radius: 10px;
+    box-shadow: 2px 10px 10px grey;
+}
+
+span {font-weight: bold;}
+
+.book-item p.author {
+    display: block;
+    margin: 0;
+}
+
+#line {border: 1px solid #333;}
+
+.footer {
+    padding: 1em;
+    margin-top: auto;
+    width: 100%;
+    background-color: rgb(54, 58, 63);
+    color: white;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 700px) {
+    .mainContent{
+        margin: 2em;
+    }
+}
+
+/* social tags */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* social links change opacity on hover */
+.fa:hover {
+    opacity: 0.5;
+}
+
+/* colour for each logo */
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55acee;
+    color: white;
+}
+
+.fa-reddit {
+    background: #ff5500;
+    color: white
+}
+
+.fa-instagram {
+    background: #d300c5;
+    color: white;
+}

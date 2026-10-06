@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./css/gallery.css">
+    
+    <!-- Bootstrap + jQuery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        
+    <!-- Bootstrap Offcanvas Component -->
+    <link rel="stylesheet" href="css/bootstrap-off-canvas.css">
+    <script src="js/bootstrap-off-canvas.js"></script>
+    
+    <!-- social media button icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+        <div class="off-canvas-wrapper">
+            <div id="off_canvas" class="off-canvas">
+            <!-- Navbar -->
+                <div class="off-canvas-nav bg-dark">
+                <!-- You may use any of the bootstrap components here -->
+                    <div class="nav nav-pills nav-fill flex-column">
+                        <a href="home_Index.html" class="text-left nav-item nav-link active">Home</a>
+                        <a href="gallery.html" class="text-left nav-item nav-link">Gallery</a>
+                        <a href="description.html" class="text-left nav-item nav-link">Descriptions</a>
+                        <a href="contact.html" class="text-left nav-item nav-link">Contact Us</a>
+                    </div>
+                </div>
+                <!-- OPTION: Adding 'overlay' class here will add overlay mask on the content -->
+                <div class="off-canvas-content overlay" data-target="#off_canvas">
+                    <nav class="navbar navbar-dark bg-dark">
+                        <button class="navbar-toggler off-canvas-toggler mx-2" type="button" data-target="#off_canvas" 
+                                aria-controls="offcanvasSupportedContent" aria-expanded="false" aria-label="Toggle off canvas menu">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand ml-3 mr-auto" href="home_Index.html">
+                            <img class="logo" src="images/icon.jpg">
+                            Book Collection
+                        </a>
+                    </nav>
+                    
+                    <!-- Main Content Here -->
+                    <div class="mainContent">
+                            <!-- Gallery rotator -->
+                            <div class="rotator" id="gallerySpinner">
+                                <div class="spinner">
+                                    <div class="panel a"></div>
+                                    <div class="panel b"></div>
+                                    <div class="panel c"></div>
+                                    <div class="panel d"></div>
+                                    <div class="panel e"></div>
+                                    <div class="panel f"></div>
+                                    <!-- ... more images ... -->
+                                    <div class="fade"></div>
+                                </div>
+                            </div>
+                            <!-- Gallery Nav buttons -->
+                            <div class="pagination">
+                                <button type="button" id="prev">&#8592;</button>
+                                <button type="button" id="next">&#8594;</button>
+                            </div>
+
+                    </div>
+                    
+                    <div class="footer">
+                        <div class="social">
+                            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+                            <a href="https://www.reddit.com/" target="_blank" class="fa fa-reddit"></a>
+                            <a href="https://x.com/" target="_blank" class="fa fa-twitter"></a>
+                            <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+        <script src="js/jQuery3Drotator.js"></script>
+    </body>
+    
+</html>

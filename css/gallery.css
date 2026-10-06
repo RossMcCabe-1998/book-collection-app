@@ -1,0 +1,220 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    /* */
+    justify-content: center;
+    align-items: center;
+    /* */
+    background:linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url(../images/Marvel-Comics-Wallpaper.jpg);
+}
+
+.mainContent {
+    border: 5px solid #333;
+    min-height: 70vh;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 1em;
+    box-shadow: 10px 15px 10px #333;
+    background-image: url(../images/galleryBackground.jpg);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    border: 2px solid orange;
+    border-radius: 50px;
+    width: 50px;
+}
+
+
+.footer {
+    padding: 1em;
+    margin-top: auto;
+    width: 100%;
+    background-color: rgb(54, 58, 63);
+    color: white;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 700px) {
+    .mainContent{
+        margin: 2em;
+    }
+}
+
+
+/* Style's for jQuery 3D rotator */
+* {
+  --ang:0;
+}
+
+.spinner {
+  transform-style: preserve-3d;
+  position:relative;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  transform: rotateY(calc(var(--ang) *1deg)) translateY(-12px);
+  transition:all 0.5s ease-in-out;
+}
+
+.rotator {
+  width:600px;
+  height:200px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  perspective:700px;
+  perspective-origin:center;
+}
+
+.panel {
+  border-radius:5px;
+  width:100px;
+  height:100px;
+  position:absolute;
+  background-size: cover;
+  background-position:50% 50%;
+}
+ 
+.panel:nth-child(1) {
+  transform: rotateY(0deg) translateZ(450px);
+}
+
+.panel:nth-child(2) {
+  transform: rotateY(22.5deg) translateZ(450px);
+}
+
+.panel:nth-child(3) {
+  transform: rotateY(45deg) translateZ(450px);
+}
+
+.panel:nth-child(4) {
+  transform: rotateY(67.5deg) translateZ(450px);
+}
+
+.panel:nth-child(5) {
+  transform: rotateY(90deg) translateZ(450px);
+}
+
+.panel:nth-child(6) {
+  transform: rotateY(112.5deg) translateZ(450px);
+}
+
+/* more image(panel) styles here */
+/* navigation styles */
+.pagination {
+  width:600px;
+  height:44px;
+  margin-top:100px;
+  text-align:center;
+  justify-content: center;  
+  align-items: center;  
+}
+
+.pagination button {
+  padding:0;
+  border:none;
+  cursor:pointer;
+  width:44px;
+  color:black;
+  background:#fffa;
+  height:44px;
+  margin:0 10px;
+  font-family:"Roboto",sans-serif;
+  font-size:20px;
+  border-radius:100%;
+  transition:all 0.2s ease-in-out;
+}
+
+.pagination button:hover {
+  background:#fffc;
+}
+
+.pagination button:active {
+  background:#ffff;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.fade {
+  background:#0006;
+  background: linear-gradient(90deg, rgba(0,0,0,0)0%, rgba(0,0,0,0.4)30%, rgba(0,0,0,0.4)70%, rgba(0,0,0,0)100%);
+  width:860px;
+  height:200px;
+  position:absolute;
+  transform: rotateY(calc(var(--ang) *-1deg)) translateZ(110px);
+  transition:all 0.5s ease-in-out;
+}
+
+.a {
+  background-image:url(../images/bookimg1.jpg);
+}
+.b {
+  background-image:url(../images/bookimg2.jpg);
+}
+.c {
+  background-image:url(../images/bookimg3.jpg);
+}
+.d {
+  background-image:url(../images/bookimg4.jpg);
+}
+.e {
+  background-image:url(../images/bookimg5.jpg);
+}
+.f {
+  background-image:url(../images/bookimg6.jpg);
+}
+
+/* social tags */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* social links change opacity on hover */
+.fa:hover {
+    opacity: 0.5;
+}
+
+/* colour for each logo */
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55acee;
+    color: white;
+}
+
+.fa-reddit {
+    background: #ff5500;
+    color: white
+}
+
+.fa-instagram {
+    background: #d300c5;
+    color: white;
+}

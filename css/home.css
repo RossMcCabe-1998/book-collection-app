@@ -1,0 +1,157 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url(../images/Marvel-Comics-Wallpaper.jpg);
+}
+
+.logo {
+    border: 2px solid orange;
+    border-radius: 50px;
+    width: 50px;
+}
+
+.mainContent {
+    border: 5px solid #333;
+    min-height: 80vh;
+    border-radius: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    padding: 1em;
+    background-color: whitesmoke;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 10px 15px 10px #333;
+}
+
+#searchSection {
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid #333;
+    padding: 2em;
+}
+
+#inputSections {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+span{
+    font-weight: bold;
+    color: darkgoldenrod;
+}
+
+#filterFavourites {
+    margin: 1em;
+    font-weight: bold;
+}
+
+#bookContainer {
+    background-color: white;
+    padding: 1em;
+    margin: 2px;
+    border: 3px solid #333;
+    border-radius: 20px;
+    display: flex;
+    gap:1rem; flex-wrap:wrap;
+    box-shadow: 5px 10px 5px #333;
+}
+
+/* style each book object */
+.book-item { 
+    background-color: whitesmoke;
+    font-weight: bold;
+    border: 2px solid #333; 
+    border-radius: 10px;
+    display: flex; 
+    gap: 10px; 
+    margin: 5px; 
+    padding: 5px;
+    align-items: flex-start;
+}
+
+.book-item img {
+    border-radius: 10px;
+    width: 70px; 
+    height: 100px; 
+    object-fit: cover; 
+    border: 2px solid #ccc; 
+}
+
+.book-details { flex: 1; }
+
+button { 
+    background-color: steelblue;
+    color: white;
+    margin: 2px;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+button:hover{
+    background-color: rgb(17, 113, 206);
+}
+
+.footer {
+    padding: 1em;
+    margin-top: auto;
+    width: 100%;
+    background-color: rgb(54, 58, 63);
+    color: white;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 700px) {
+    .mainContent{
+        margin: 2em;
+    }
+}
+
+/* social tags */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* social links change opacity on hover */
+.fa:hover {
+    opacity: 0.5;
+}
+
+/* colour for each logo */
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55acee;
+    color: white;
+}
+
+.fa-reddit {
+    background: #ff5500;
+    color: white
+}
+
+.fa-instagram {
+    background: #d300c5;
+    color: white;
+}
